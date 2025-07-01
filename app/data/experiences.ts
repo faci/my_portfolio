@@ -6,15 +6,26 @@ export const experiences: Experience[] = [
     title: 'Avasport',
     subtitle: 'Freelance (php symfony, Vuejs)',
     cover: '/ava_sport_logo.jpeg',
-    description: "J’ai accompagné Avasport, un SaaS dédié aux professeurs d’EPS, dans l’évolution de sa plateforme pédagogique. Mon rôle a été à la fois stratégique et opérationnel, allant de la conception fonctionnelle au développement.",
+    description: "<b>💻 Développement et évolution d’un SaaS éducatif</b> <br/><br/>\
+      J’ai accompagné Avasport, une plateforme SaaS dédiée aux enseignants d’EPS, dans l’évolution de son application web.<br/> \
+      Mon rôle a été à la fois stratégique et opérationnel, de la conception fonctionnelle jusqu’au développement full stack des nouvelles fonctionnalités.",
     rex: "Cette mission m’a permis de contribuer à une solution concrète au service de l’éducation, avec une forte autonomie et un vrai impact produit.",
-    mission: "<ul><li> Mise en place de la gestion des élèves dans les groupes existants</li> <br /> \
-      <li> Ajout de la gestion des compétences individuelles par élève, avec validation par niveaux</li> <br /> \
-      <li> Conception d’un système flexible de compétences : possibilité d’utiliser des compétences génériques (créées depuis le backoffice) ou des compétences spécifiques à chaque groupe</li> <br /> \
-      <li> Conception et développement de la roadmap produit en collaboration avec le client</li> <br /> \
-      <li> Création et évolution du modèle de données pour supporter les nouvelles fonctionnalités</li> <br /> \
-      <li> Intégration dans le backoffice d’un module complet de gestion des compétences (ajout, édition, suppression)</li> <br /> \
-      <li> Design et développement full stack (front & back)</li></ul>",
+    mission: "<b>🔧 Ma mission sur ce projet</b> <br/><br/> \
+      <ul><li>🔄 Mise en place de la gestion des élèves dans les groupes existants</li> \
+      <li>🎯 Ajout d’un système de compétences individuelles par élève, avec validation par niveaux</li> \
+      <li>🧩 Conception d’un système flexible de gestion des compétences, permettant : \
+        <ul><li>l’utilisation de compétences génériques (créées depuis le backoffice)</li> \
+        <li>ou spécifiques à chaque groupe</li></ul> \
+      </li> \
+      <li>🗺️ Définition et développement de la roadmap produit, en collaboration directe avec le client</li> \
+      <li>🧱 Création et évolution du modèle de données pour supporter ces nouvelles logiques métiers</li> \
+      <li>🛠️ Intégration d’un module complet dans le backoffice : gestion des compétences (ajout, édition, suppression)</li> \
+      <li>🧑‍💻 Développement full stack (front-end & back-end)</li></ul> <br/><br/> \
+      <b>✅ Résultats & retours</b> <br/><br/>\
+      <ul><li>Un module de compétences plus flexible, parfaitement intégré aux usages métiers des enseignants</li>\
+      <li>Une interface de gestion plus intuitive, facilitant le quotidien des utilisateurs</li> \
+      <li>Une roadmap claire, structurée autour des vrais besoins terrain</li></ul>\
+      ",
     type: 'Freelance',
     duration: '3 mois',
     website: 'https://www.ava-sport.fr/',
@@ -34,14 +45,35 @@ export const experiences: Experience[] = [
     title: 'Skello',
     subtitle: 'CDI (ruby on rails, Vuejs, AWS)',
     cover: '/skello_logo.png',
-    description: "Skello est une Scale Up, qui accompagne les entreprises de terrain en développent une solution SAAS pour toute la gestion RH de l'entreprise, allant de la création de planning à la gestion des paies.",
+    description: "<b>🏢 Scale-up RH – SaaS de gestion des équipes terrain</b><br/><br/> \
+      Skello est une scale-up qui propose une solution SaaS complète pour la gestion RH des entreprises terrain (planning, paie, communication interne, etc.).<br/>  \
+      J’ai rejoint l’équipe tech pour renforcer la cohérence produit, améliorer l’expérience développeur et participer à la mise en place d’architectures scalables.",
     rex: "Chez Skello, j’ai plongé dans un environnement tech exigeant et stimulant, où j’ai découvert les microservices, exploré le serverless, et passé plusieurs certifications pour monter en compétence. \
       Mais ce que je retiens surtout, ce sont les équipes : bienveillantes, passionnées, et toujours prêtes à partager. Une expérience aussi formatrice que humaine.",
-    mission: "Mes principales contributions ont été les suivantes : <br/>\
-      <ul><li><b>Mise en place d'un Design System :</b> Conception et implémentation d'un design système basé sur Vue.js, en migrant des composants clés tels que les menus déroulants, boutons, champs de saisie, et la typographie. Création d'un Storybook pour aligner les équipes produit et design, garantissant ainsi une uniformité. Enfin, direction d'une équipe de 4 développeurs pour intégrer ce système de manière fluide, en minimisant les risques de régression.</li> \
-      <ul><li><b>Microservice communication :</b> Développement d'un microservice pour la gestion des emails, SMS et notifications push en utilisant AWS SQS et Lambdas, le tout surveillé via CloudWatch. Construction d'une API sécurisée pour les SMS via API Gateway, et supervision de la migration en utilisant des feature flags afin d'assurer une transition en douceur avec des sessions de QA hebdomadaires.</li> \
-      <ul><li><b>Microservice de planification de la charge de travail :</b> Création d'une fonctionnalité de prédiction de la charge de travail pour les managers, intégrant ApexCharts pour la visualisation des données et un popover personnalisé avec Popper.js pour fournir des informations détaillées. Déploiement d'un backend sans serveur avec API Gateway, Lambdas, DynamoDB et SQS pour la gestion des données et le basculement en cas de panne.</li> \
-      <ul><li><b>Synchronisation de données en fan-out :</b> Mise en place d'une architecture fan-out avec SNS et SQS pour la synchronisation des données en temps réel entre les microservices, garantissant ainsi la cohérence des bases de données.</li>",
+    mission: "<b>🔧 Ma mission sur ce projet</b> <br/><br/> \
+      <b>🧱 Mise en place d’un Design System unifié</b> <br/><br/> \
+      <ul><li>Conception et développement d’un design system basé sur Vue.js</li> \
+      <li>Migration de composants clés : menus déroulants, boutons, champs de saisie, typographie</li> \
+      <li>Création d’un Storybook pour aligner les équipes produit et design</li> \
+      <li>Coordination d’une équipe de 4 développeurs pour intégrer ce système de manière fluide, avec un risque de régression minimal</li></ul><br/><br/> \
+      <b>📬 Microservice de communication interne</b> <br/><br/> \
+      <ul><li>Développement d’un microservice dédié à la gestion des emails, SMS et notifications push</li> \
+      <li>Stack AWS : SQS, Lambda, API Gateway, CloudWatch</li> \
+      <li>Mise en place d’un système de feature flags pour assurer une migration progressive et sécurisée</li> \
+      <li>Animation de sessions QA hebdo pour garantir la stabilité</li></ul><br/><br/> \
+      <b>📊 Module de planification intelligente</b> <br/><br/> \
+      <ul><li>Création d’une fonctionnalité de prédiction de charge de travail, pensée pour les managers terrain</li> \
+      <li>Visualisation des données via ApexCharts, enrichies avec des popovers personnalisés (Popper.js)</li> \
+      <li>Backend serverless : API Gateway, Lambda, DynamoDB, SQS</li></ul><br/><br/> \
+      <b>🔄 Architecture fan-out pour la synchronisation des données</b> <br/><br/> \
+      <ul><li>Mise en place d’une architecture de synchronisation en temps réel entre microservices</li> \
+      <li>Utilisation de SNS + SQS pour garantir la cohérence des données et la résilience des flux</li></ul><br/><br/> \
+      <b>✅ Résultats & retours</b> <br/><br/>\
+      <ul><li>Un design system scalable et adopté par les équipes produit & tech</li>\
+      <li>Des microservices robustes, bien monitorés, avec une transition sans régression</li> \
+      <li>Une expérience managériale enrichie grâce à la visualisation de données en temps réel</li>\
+      <li>Une architecture distribuée fiable, capable de suivre la croissance de la plateforme</li></ul> \
+    ",
     type: 'CDI',
     duration: '3 ans et 3 mois',
     website: 'https://skello.io',
@@ -61,14 +93,21 @@ export const experiences: Experience[] = [
     title: 'Nohyia',
     subtitle: 'Entrepreneur (Flutter, Firebase)',
     cover: '/nohyia_logo.png',
-    description: "Je suis partie d'un constat simple : aujourd'hui, pour percer en tant qu'artiste musical, il faut être partout, tout le temps. Créer, poster, performer… et jongler avec les algorithmes des réseaux sociaux. Beaucoup de talents restent dans l'ombre, non pas par manque de qualité, mais par manque de visibilité. C'est de là qu'est née Nohyia : une application mobile pensée pour mettre en lumière les artistes émergents, à travers des extraits musicaux de 30 secondes, géolocalisés. Un format court, authentique, pensé pour l'écoute locale et la découverte. Je suis partie d'un constat simple : aujourd'hui, pour percer en tant qu'artiste musical, il faut être partout, tout le temps. Créer, poster, performer… et jongler avec les algorithmes des réseaux sociaux. Beaucoup de talents restent dans l'ombre, non pas par manque de qualité, mais par manque de visibilité. C'est de là qu'est née Nohyia : une application mobile pensée pour mettre en lumière les artistes émergents, à travers des extraits musicaux de 30 secondes, géolocalisés. Un format court, authentique, pensé pour l'écoute locale et la découverte. ",
+    description: "<b>📱 Développement d’une application mobile Flutter + stratégie produit </b><br/><br/> \
+      J’ai conçu et développé Nohyia, une application mobile destinée aux artistes émergents qui souhaitent gagner en visibilité en partageant des extraits musicaux géolocalisés.",
     rex: "Nohyia, c’est un projet tech, mais surtout une aventure humaine : celle de créer un outil qui respecte le rythme des artistes, qui valorise leur univers, et qui leur offre une scène à leur mesure.",
-    mission: "J’ai porté ce projet de A à Z : \
-      Conception et développement de l’application mobile en Flutter \
-      Création de l’identité de marque (logo, ligne graphique, ton éditorial) \
-      Développement du site vitrine, pour expliquer la vision et embarquer les premiers utilisateurs \
-      Prospection terrain et lancement d’une bêta, avec écoute active des retours artistes \
-      Itérations produit rapides, pour affiner l’expérience et coller aux vrais besoins",
+    mission: "<b>🔧 Ma mission sur ce projet</b> <br/><br/>  \
+      <ul><li>Développement complet de l’application mobile en Flutter (iOS + Android)</li> \
+      <li>Création de l’identité de marque : logo, ligne graphique, ton éditorial</li> \
+      <li>Mise en place d’un backend scalable avec Firebase (auth, stockage, base de données temps réel)</li> \
+      <li>Développement du site vitrine (VueJs) pour expliquer la vision produit et convertir les premiers utilisateurs</li> \
+      <li>Lancement d’une bêta test avec des artistes locaux, via de la prospection terrain</li> \
+      <li>Recueil de feedbacks utilisateurs + itérations rapides pour améliorer l’expérience</li></ul> \
+      <br/><br/> \
+      <b>✅ Résultats & retours</b> <br/><br/>\
+      <ul><li>Une première communauté d’utilisateurs engagés en France</li> \
+      <li>Des retours très positifs sur l’UX, la simplicité de l’interface et la pertinence de l’outil pour les artistes indépendants </li>\
+      <li>Une base solide pour continuer à itérer et scaler l’application</li></ul>",
     type: 'Entrepreneur',
     duration: '1 an',
     website: 'https://nohyia.com',
@@ -84,17 +123,26 @@ export const experiences: Experience[] = [
   {
     id: 3,
     title: "Prestakid's",
-    subtitle: 'Developpeur web',
+    subtitle: 'Freelance',
     cover: '/prestakids_logo.jpg',
-    description: "Presta’Kids est née d’un besoin simple mais essentiel : permettre aux parents de profiter pleinement de leurs événements (mariage, baptême, anniversaire…) en confiant leurs enfants à des professionnels de confiance. L’objectif du site était double : valoriser l’univers chaleureux et rassurant de l’agence, et simplifier la prise de contact avec les familles. \
-          J’ai accompagné la fondatrice dans la structuration de son offre en ligne, pour créer un site clair, esthétique et efficace, centré sur la prise de devis.",
-    rex: "Presta’Kids, c’est un projet où le digital est mis au service du concret : créer un site simple, professionnel, qui inspire confiance aux parents dès la première visite. En partant d’une feuille blanche, j’ai structuré l’information, imaginé une identité visuelle douce et accueillante, et conçu une interface fluide, intuitive et responsive. L’objectif : offrir à la fondatrice un vrai outil de prospection, qu’elle puisse utiliser dès la première prise de contact client.",
-    mission: "J’ai pris en charge le projet de A à Z : \
-      Analyse de la concurrence & cadrage des besoins avec la fondatrice \
-      Conception des maquettes sur Figma \
-      Développement du site vitrine en responsive design \
-      Intégration d’un formulaire de contact pour la demande de devis \
-      Mise en place d’un SEO simple et efficace pour améliorer la visibilité locale",
+    description: "<b>🎯 Création d’un site orienté conversion & visibilité locale</b><br/><br/> \
+      Presta’Kids est une agence qui propose un service essentiel : permettre aux parents de profiter pleinement de leurs événements (mariages, anniversaires, baptêmes...) en confiant leurs enfants à des professionnels de confiance. <br/> \
+      L’objectif du site était double : valoriser l’univers rassurant et chaleureux de l’agence, et générer des demandes de devis rapidement et simplement. <br/> \
+      J’ai accompagné la fondatrice sur l’ensemble du projet, de la stratégie à la réalisation technique. \
+    ",
+    rex: "PrestaKid's, c’est un projet où le digital est mis au service du concret : créer un site simple, professionnel, qui inspire confiance aux parents dès la première visite. En partant d’une feuille blanche, j’ai structuré l’information, imaginé une identité visuelle douce et accueillante, et conçu une interface fluide, intuitive et responsive. L’objectif : offrir à la fondatrice un vrai outil de prospection, qu’elle puisse utiliser dès la première prise de contact client.",
+    mission: "<b>🔧 Ma mission sur ce projet</b> <br/><br/>  \
+      <ul><li>🔍 Analyse de la concurrence et cadrage des besoins avec la fondatrice</li> \
+      <li>🧭 Aide à la structuration de l’offre pour clarifier la proposition de valeur</li> \
+      <li>🎨 Conception des maquettes sur Figma, avec un univers visuel doux et rassurant</li> \
+      <li>💻 Développement du site vitrine responsive (mobile + desktop)</li> \
+      <li>✉️ Intégration d’un formulaire de contact optimisé pour la demande de devis</li> \
+      <li>🔍 Mise en place d’un SEO local simple et efficace pour améliorer la visibilité sur les recherches régionales</li></ul> \
+      <br/><br/> \
+      <b>✅ Résultats & retours</b> <br/><br/>\
+      <ul><li>Un site vitrine esthétique, clair et professionnel, aligné avec l’image de marque de Presta’Kids</li> \
+      <li>Un taux de conversion élevé dès les premières semaines grâce à un tunnel de demande de devis fluide</li>\
+      <li>Une visibilité locale accrue via des optimisations SEO sur des mots-clés comme “garde enfants mariage [ville]“</li></ul>",
     type: 'Freelance',
     duration: '1 mois',
     website: 'https://www.prestakids.fr/',
@@ -107,16 +155,29 @@ export const experiences: Experience[] = [
   {
     id: 4,
     title: "French tech mediteranné",
-    subtitle: 'Developpeur web',
+    subtitle: 'Freelance',
     cover: '/french_tech_logo.jpeg',
-    description: "La French Tech Méditerranée avait besoin d’un outil centralisé pour gérer ses événements, vendre des billets en ligne, publier du contenu et fluidifier l’organisation interne. Le défi : concevoir une application SaaS robuste, intuitive, et accessible, à destination de l’écosystème tech local. J’ai participé à la conception et au développement complet de cette plateforme, en étroite collaboration avec l’équipe projet.",
+    description: "<b>🎟️ Création d’un outil tout-en-un pour l’écosystème tech local</b><br/><br/> \
+      La French Tech Méditerranée avait besoin d’une plateforme unique pour organiser ses événements, gérer les inscriptions et la billetterie, publier du contenu, et fluidifier la gestion interne. <br/> \
+      Le défi : concevoir un outil SaaS robuste et intuitif, accessible à toute la communauté tech locale. <br /> \
+      J’ai participé à l’ensemble du projet, de la conception fonctionnelle au développement full stack, en collaboration étroite avec l’équipe. \
+    ",
     rex: "Ce projet alliait des enjeux techniques concrets (paiement, gestion de contenu, sécurité des transactions) à une forte exigence UX. J’ai mis en place un système de paiement fiable via Stripe, un backoffice personnalisé pour l’équipe French Tech, ainsi qu’une interface responsive agréable à utiliser côté utilisateur. Grâce à une architecture solide (TypeScript, Express.js, TSOA côté back, Vue.js et Vuex côté front), la plateforme est devenue un outil clé dans l’organisation des événements et la gestion de la communauté.",
-    mission: "Ma mission a couvert l’ensemble du cycle de développement : \
-      Développement d’une application SaaS responsive en Vue.js, avec Vuex pour la gestion d’état \
-      Conception de l’API backend en TypeScript avec Express.js et TSOA, pour une documentation claire et une architecture scalable \
-      Intégration de Stripe pour la vente de billets, avec gestion des paiements et des stocks en temps réel \
-      Création d’un backoffice sur-mesure pour permettre à l’équipe d’ajouter des événements, gérer les tarifs et publier du contenu \
-      Collaboration avec l’équipe pour assurer des itérations rapides et une prise en main fluide de l’outil",
+    mission: "<b>🔧 Ma mission sur ce projet</b> <br/><br/>  \
+      <ul><li>💻 Développement d’une application SaaS responsive en Vue.js, avec Vuex pour la gestion d’état</li> \
+      <li>🤝 Collaboration directe avec l’équipe projet pour assurer des itérations rapides et une prise en main fluide de la plateforme</li> \
+      <li>🧩 Conception d’une API backend scalable en TypeScript, avec Express.js et TSOA pour une documentation automatique claire</li> \
+      <li>💳 Intégration de Stripe pour la vente de billets en ligne, avec gestion des paiements et du stock en temps réel</li> \
+      <li>🛠️ Développement d’un backoffice sur-mesure pour : \
+        <ul><li>créer et modifier des événements</li> \
+        <li>gérer les tarifs et les stocks</li> \
+        <li>publier du contenu éditorial</li></ul> \
+      </li></ul> \
+      <br/><br/> \
+      <b>✅ Résultats & retours</b> <br/><br/>\
+      <ul><li>Une plateforme tout-en-un permettant de centraliser la gestion des événements tech</li> \
+      <li>Un outil SaaS scalable et maintenable, avec une UX claire pour les équipes comme pour les utilisateurs</li>\
+      <li>Une expérience de vente fluide (paiement, inscriptions, gestion de stock) intégrée en temps réel</li></ul>",
     type: 'Freelance',
     duration: '3 mois',
     website: 'https://www.lafrenchtechmed.com/',
@@ -133,4 +194,8 @@ export function getExperience(id: number): Experience | null {
   if (!experience) return null;
 
   return experience;
+}
+
+export function getOtherExperiences(id: number): Experience[] {
+  return experiences.filter(experience => experience.id !== Number(id));
 }

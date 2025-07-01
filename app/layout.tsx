@@ -20,6 +20,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Développeur web full stack freelance – Création d’applications web",
   description: "Freelance experte en développement web. J’aide startups et entreprises à créer des applications utiles, scalables et sur-mesure. Basée au Panama, remote.",
+  viewport: "width=device-width, initial-scale=1.0"
 };
 
 export default function RootLayout({

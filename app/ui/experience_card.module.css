@@ -10,6 +10,13 @@
   background-color: #242323;
 }
 
+.experience__container {
+  flex: 1 1 250px;
+  max-width: 200px;
+  height: 280px;
+  padding: 18px;
+}
+
 @keyframes flapIn {
   0% {
     opacity: 0;
@@ -33,6 +40,7 @@
 
 .subtitle {
   font-size: 12px;
+  text-align: center;
 }
 
 .cover_container {
@@ -104,4 +112,8 @@
 .discover_text__title {
   font-size: 32px;
   display: none;
+}
+
+.experience_h3 {
+  font-size: 1rem !important;
 }

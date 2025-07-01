@@ -1,18 +1,20 @@
 import {hardSkills, SoftSkills} from '@/app/data/skills';
 import Image from "next/image";
 import styles from './skills.module.css';
-import SlideInOnScroll from "@/app/components/slideInOnScroll";
+import SlideInOnScroll from "@/app/ui/slideInOnScroll";
+import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
+import circleLine from "@/app/assets/images/line_draw/circle_line.svg";
 
 export default function Skills() {
   return (
-    <div className={styles.container}>
+    <section id="skills" className={styles.container}>
       <div className={styles.title_box}>
         <SlideInOnScroll>
           <h2 className={styles.title}>Et les skills</h2>
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src="/line_draw/simple_line.svg"
+          src={simpleLine}
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -31,7 +33,7 @@ export default function Skills() {
             <h3>Hard</h3>
             <Image
               className={styles.circle_draw}
-              src="/line_draw/circle_line.svg"
+              src={circleLine}
               alt="cercle jaune dessiné à la main"
               width={200}
               height={250}
@@ -65,7 +67,7 @@ export default function Skills() {
             <h3>Soft</h3>
             <Image
               className={styles.circle_draw}
-              src="/line_draw/circle_line.svg"
+              src={circleLine}
               alt="cercle jaune dessiné à la main"
               width={200}
               height={250}
@@ -94,6 +96,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

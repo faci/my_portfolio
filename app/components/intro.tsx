@@ -1,17 +1,22 @@
+'use client';
+
 import Image from "next/image";
 import styles from "@/app/components/intro.module.css";
-import SlideInOnScroll from "@/app/components/slideInOnScroll";
+import SlideInOnScroll from "@/app/ui/slideInOnScroll";
+import Button from "@/app/ui/button";
+import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
+import zLine from "@/app/assets/images/line_draw/z_line.svg";
 
 export default function Intro() {
   return (
-    <section className={styles.container}>
+    <section id="introduction" className={styles.container}>
       <div className={styles.title_box}>
         <SlideInOnScroll>
           <h2 className={styles.title}>Mais qui suis-je ?</h2>
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src="/line_draw/simple_line.svg"
+          src={simpleLine}
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -32,6 +37,7 @@ export default function Intro() {
             <br/><br/>
             Actuellement basée au Panama, je travaille en remote avec des équipes en France et à l’international.<br/>
           </div>
+          <Button label="Voir mes projets récents" src={'/#experiences'} />
         </div>
         <div className={styles.content__avatar}>
           <SlideInOnScroll direction="right">
@@ -50,7 +56,7 @@ export default function Intro() {
         </div>
         <Image
           className={styles.z_line_left}
-          src="/line_draw/z_line.svg"
+          src={zLine}
           alt="double ligne jaune dessiné à la main"
           width={470}
           height={90}

@@ -18,7 +18,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Par défaut en colonne */
+    flex-direction: column;
     gap: 2rem;
     padding: 30px;
 }
@@ -35,7 +35,7 @@
   
     .experience_list li {
       scroll-snap-align: start;
-      flex: 0 0 auto; /* Pour éviter que ça se squeeze */
+      flex: 0 0 auto;
     }
 }
 

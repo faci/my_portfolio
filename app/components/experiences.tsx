@@ -2,10 +2,11 @@
 
 import ExperienceCard from '@/app/ui/experience_card'
 import {experiences} from '@/app/data/experiences'
+import SlideInOnScroll from "@/app/ui/slideInOnScroll";
+import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
 import styles from './experiences.module.css'
-import Image from "next/image";
-import SlideInOnScroll from "@/app/components/slideInOnScroll";
 
+import Image from "next/image";
 import { useRouter } from 'next/navigation'
 
 export default function Experiences() {
@@ -16,14 +17,14 @@ export default function Experiences() {
   }
 
   return (
-    <div className={styles.container}>
+    <section id="experiences" className={styles.container}>
       <div className={styles.title_container}>
         <SlideInOnScroll>
           <h2 className={styles.title}>Mes Dernières <br /> expériences</h2>
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src="/line_draw/simple_line.svg"
+          src={simpleLine}
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -40,12 +41,12 @@ export default function Experiences() {
           experiences.map(experience => {
             return (
               <li key={experience.title} onClick={() => redirectToDirection(experience.id)}>
-                <ExperienceCard experience={experience}/>
+                <ExperienceCard experience={experience} isExperience={false}/>
               </li>
             )
           })
         }
       </ul>
-    </div>
+    </section>
   );
 }

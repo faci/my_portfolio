@@ -4,7 +4,7 @@ import styles from './contact.module.css';
 
 export default function Contact() {
   return (
-    <div className={styles.container}>
+    <section id="contact" className={styles.container}>
       <span>Email : lisa.sarah.f@gmail.com</span>
       <div className={styles.social_links}>
         <a href="https://www.instagram.com/lisa_innosphere/" target="_blank" rel="noopener noreferrer">
@@ -28,6 +28,6 @@ export default function Contact() {
           height={366}
         />
       </div>
-    </div>
+    </section>
   );
 }

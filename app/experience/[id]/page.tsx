@@ -1,15 +1,23 @@
-import Image from "next/image";
-import { getExperience } from "@/app/data/experiences"
-import styles from './page.module.css'
-import SlideInOnScroll from "@/app/components/slideInOnScroll";
+"use client"
 
-export default async function ExperiencePage({
+import { use } from "react";
+import Image from "next/image";
+import { useRouter } from 'next/navigation'
+import { getExperience, getOtherExperiences } from "@/app/data/experiences"
+import styles from './page.module.css'
+import SlideInOnScroll from "@/app/ui/slideInOnScroll";
+import ExperienceCard from '@/app/ui/experience_card'
+import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
+
+export default function ExperiencePage({
   params,
 }: {
   params: Promise<{ id: number }>
 }) {
-  const { id } = await params
-  const experience = getExperience(id)
+  const { id } = use(params);
+  const experience = getExperience(id);
+  const otherExperiences = getOtherExperiences(id);
+  const router = useRouter();
 
   if (!experience) {
     return (
@@ -19,6 +27,10 @@ export default async function ExperiencePage({
       </div>
     );
   }
+
+  const redirectToDirection = (slug: number) => {
+    router.push(`/experience/${slug}`)
+  }
  
   return (
     <div className={styles.container}>
@@ -26,7 +38,7 @@ export default async function ExperiencePage({
         <h1 className={styles.title}>Expérience</h1>
         <Image
           className={styles.line_draw}
-          src="/line_draw/simple_line.svg"
+          src={simpleLine}
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -72,20 +84,20 @@ export default async function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src="/line_draw/simple_line.svg"
+              src={simpleLine}
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
             />
           </div>
-          <span>{experience?.description}</span>
+          <div dangerouslySetInnerHTML={{__html: experience?.description}}></div>
           <div className={styles.subtitle_box}>
             <SlideInOnScroll>
               <h2 className={styles.title}>Ma mission</h2>
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src="/line_draw/simple_line.svg"
+              src={simpleLine}
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -98,7 +110,7 @@ export default async function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src="/line_draw/simple_line.svg"
+              src={simpleLine}
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -113,7 +125,7 @@ export default async function ExperiencePage({
           </SlideInOnScroll>
             <Image
               className={styles.line_draw_information}
-              src="/line_draw/simple_line.svg"
+              src={simpleLine}
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -131,9 +143,22 @@ export default async function ExperiencePage({
           <div className={styles.information_content}>
             <span className={styles.label}>Site :</span><span>{experience?.website}</span>
           </div>
-          {/* <div>
-            <span>Technologies :</span><span>{experience?.title}</span>
-          </div> */}
+          <div className={styles.information_content}>
+            <span className={styles.label}>Découvrez mes autres projets :</span>
+          </div>
+          <div className={styles.experience_list_wrapper}>
+            <ul className={styles.experience_list}>
+              {
+                otherExperiences.map(experience => {
+                  return (
+                    <li key={experience.title} onClick={() => redirectToDirection(experience.id)}>
+                      <ExperienceCard experience={experience} isExperience />
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </div>

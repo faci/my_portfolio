@@ -17,8 +17,6 @@ export default function Home() {
         <Experiences />
         <Contact />
       </main>
-      <footer className={styles.footer}>
-      </footer>
     </div>
   );
 }

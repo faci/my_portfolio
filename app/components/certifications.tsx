@@ -1,17 +1,18 @@
 import Image from "next/image";
 import styles from "./certification.module.css";
-import SlideInOnScroll from "@/app/components/slideInOnScroll";
+import SlideInOnScroll from "@/app/ui/slideInOnScroll";
+import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
 
 export default function Certifications() {
   return (
-    <div className={styles.container}>
+    <section id="certifications" className={styles.container}>
       <div className={styles.title_box}>
         <SlideInOnScroll>
           <h2 className={styles.title}>Certificats</h2>
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src="/line_draw/simple_line.svg"
+          src={simpleLine}
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -38,6 +39,6 @@ export default function Certifications() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
