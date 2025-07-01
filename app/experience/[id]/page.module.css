@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 35px;
+
+    h3, h2 {
+        font-size: 42px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.content_data {
+    flex: 1;
+}
+
+.informations {
+    flex: 1;
+    align-self: flex-start;
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    height: fit-content;
+}
+
+.information_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.content_data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.line_draw {
+    position: absolute;
+    top: 42px;
+    transform: rotate(5deg);
+}
+
+.line_draw_subtitle {
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    transform: rotate(5deg);
+}
+
+.line_draw_information {
+    position: absolute;
+    top: 10px;
+    transform: rotate(10deg);
+}
+
+.title_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle_box {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.margin_bottom_15 {
+    margin-bottom: 15px;
+}
+
+.screen_shot_card {
+    width: 385px;
+    height: 192px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #242323;
+    position: absolute;
+}
+
+.screen_shot_card_mobile {
+    width: 235px;
+    height: 465px;
+}
+
+.screen_shot_image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content_data_images {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.content_data_images_mobile {
+    height: 600px;
+    width: 80%;
+    align-self: center;
+}
+
+.top_left {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.center_center {
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+}
+
+.center_center_mobile {
+    left: 25%;
+    z-index: 2;
+}
+
+.bottom_right {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.bottom_left {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}

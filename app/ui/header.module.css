@@ -1,0 +1,25 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 35px;
+  font-size: 18px;
+}
+
+.header__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.title_container {
+  position: relative;
+}
+
+.line_draw {
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  transform: rotate(30deg);
+}

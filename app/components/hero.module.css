@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: #FCAF45;
+  margin-top: -50px;
+  font-weight: bold;
+}

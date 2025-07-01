@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Header from '@/app/ui/header';
 import "./globals.css";
+import { Montserrat, Poppins } from 'next/font/google'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'swap',
+  weight: ['400', '600', '700'], // adapte selon tes besoins
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+  weight: ['400', '600', '700'],
+})
 
 export const metadata: Metadata = {
-  title: "Lisa Faci - Portfolio",
-  description: "Portfolio of Lisa Faci - freelance fullstack developer",
+  title: "Développeur web full stack freelance – Création d’applications web",
+  description: "Freelance experte en développement web. J’aide startups et entreprises à créer des applications utiles, scalables et sur-mesure. Basée au Panama, remote.",
 };
 
 export default function RootLayout({
@@ -24,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${poppins.variable}`}>
+      <body>
         <Header />
         {children}
       </body>

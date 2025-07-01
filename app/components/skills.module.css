@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h3 {
+        font-size: 42px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content__element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.content__list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.icon {
+    font-size: 42px;
+}
+
+.content__list__element {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.content__list__element:hover {
+    cursor: pointer;
+
+    .tooltipWrapper {
+        background-color: #FCAF45;
+    }
+}
+
+.title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+}
+
+.subtitle {
+    max-width: 80%;
+}
+
+.soft_title {
+    align-self: end;
+}
+
+.line_draw {
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    left: 20%;
+}
+
+@media (min-width: 600px) {
+    .line_draw {
+        top: 40px;
+        transform: rotate(5deg);
+    }
+}
+
+.title_box {
+    position: relative;
+}
+
+.content__element_title_box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.circle_draw {
+    position: absolute;
+    top: -95px;
+    left: -55px;
+}
+
+.tooltipWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100.1%;
+    left: 180.1%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    overflow: hidden;
+    width: 220px;
+}
+
+.tooltipWrapper:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip__text {
+    white-space: normal;
+}
+
+.tooltip_hard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.tooltip_hard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+}
