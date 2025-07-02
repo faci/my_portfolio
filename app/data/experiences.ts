@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
     id: 0,
     title: 'Avasport',
     subtitle: 'Freelance (php symfony, Vuejs)',
-    cover: '/ava_sport_logo.jpeg',
+    cover: '/images/logos/clients/ava_sport_logo.jpeg',
     description: "<b>💻 Développement et évolution d’un SaaS éducatif</b>\
       <span>J’ai accompagné Avasport, une plateforme SaaS dédiée aux enseignants d’EPS, dans l’évolution de son application web.</span> \
       <span>Mon rôle a été à la fois stratégique et opérationnel, de la conception fonctionnelle jusqu’au développement full stack des nouvelles fonctionnalités.</span>",
@@ -30,21 +30,21 @@ export const experiences: Experience[] = [
     duration: '3 mois',
     website: 'https://www.ava-sport.fr/',
     skills: [
-      '/symfony_logo.png',
-      '/vuejs_logo.png',
-      '/docker_logo.webp',
-      '/typescript_logo.png',
+      '/images/logos/skills/symfony_logo.png',
+      '/images/logos/skills/vuejs_logo.png',
+      '/images/logos/skills/docker_logo.webp',
+      '/images/logos/skills/typescript_logo.png',
     ],
-    screenShot: '/screen_shots/ava-sport_competence.png',
-    screenShot1: '/screen_shots/ava-sport_login.png',
-    screenShot2: '/screen_shots/ava-sport_menu.png',
+    screenShot: '/images/screen_shots/ava-sport_competence.png',
+    screenShot1: '/images/screen_shots/ava-sport_login.png',
+    screenShot2: '/images/screen_shots/ava-sport_menu.png',
     isMobile: false
   },
   {
     id: 1,
     title: 'Skello',
     subtitle: 'CDI (ruby on rails, Vuejs, AWS)',
-    cover: '/skello_logo.png',
+    cover: '/images/logos/clients/skello_logo.png',
     description: "<b>🏢 Scale-up RH – SaaS de gestion des équipes terrain</b> \
       <span>Skello est une scale-up qui propose une solution SaaS complète pour la gestion RH des entreprises terrain (planning, paie, communication interne, etc.).</span>  \
       <span>J’ai rejoint l’équipe tech pour renforcer la cohérence produit, améliorer l’expérience développeur et participer à la mise en place d’architectures scalables.</span>",
@@ -78,21 +78,21 @@ export const experiences: Experience[] = [
     duration: '3 ans et 3 mois',
     website: 'https://skello.io',
     skills: [
-      '/aws_logo.png',
-      '/typescript_logo.png',
-      '/vuejs_logo.png',
-      '/ruby_logo.png',
+      '/images/logos/skills/aws_logo.png',
+      '/images/logos/skills/typescript_logo.png',
+      '/images/logos/skills/vuejs_logo.png',
+      '/images/logos/skills/ruby_logo.png',
     ],
-    screenShot: '/screen_shots/skello_blue.jpeg',
-    screenShot1: '/screen_shots/skello_main.jpg',
-    screenShot2: '/screen_shots/skello_yellow.jpeg',
+    screenShot: '/images/screen_shots/skello_blue.jpeg',
+    screenShot1: '/images/screen_shots/skello_main.jpg',
+    screenShot2: '/images/screen_shots/skello_yellow.jpeg',
     isMobile: false
   },
   {
     id: 2,
     title: 'Nohyia',
     subtitle: 'Entrepreneur (Flutter, Firebase)',
-    cover: '/nohyia_logo.png',
+    cover: '/images/logos/clients/nohyia_logo.png',
     description: "<b>📱 Développement d’une application mobile Flutter + stratégie produit \
       <span>J’ai conçu et développé Nohyia, une application mobile destinée aux artistes émergents qui souhaitent gagner en visibilité en partageant des extraits musicaux géolocalisés.</span>",
     rex: "Nohyia, c’est un projet tech, mais surtout une aventure humaine : celle de créer un outil qui respecte le rythme des artistes, qui valorise leur univers, et qui leur offre une scène à leur mesure.",
@@ -112,19 +112,19 @@ export const experiences: Experience[] = [
     duration: '1 an',
     website: 'https://nohyia.com',
     skills: [
-      '/flutter_logo.png',
-      '/firebas_logo.webp',
+      '/images/logos/skills/flutter_logo.png',
+      '/images/logos/skills/firebas_logo.webp',
     ],
-    screenShot: '/screen_shots/nohyia_profile.png',
-    screenShot1: '/screen_shots/nohyia_main.png',
-    screenShot2: '/screen_shots/nohyia_create.png',
+    screenShot: '/images/screen_shots/nohyia_profile.png',
+    screenShot1: '/images/screen_shots/nohyia_main.png',
+    screenShot2: '/images/screen_shots/nohyia_create.png',
     isMobile: true
   },
   {
     id: 3,
     title: "Prestakid's",
     subtitle: 'Freelance',
-    cover: '/prestakids_logo.jpg',
+    cover: '/images/logos/clients/prestakids_logo.jpg',
     description: "<b>🎯 Création d’un site orienté conversion & visibilité locale</b> \
       <span>Presta’Kids est une agence qui propose un service essentiel : permettre aux parents de profiter pleinement de leurs événements (mariages, anniversaires, baptêmes...) en confiant leurs enfants à des professionnels de confiance. </span> \
       <span>L’objectif du site était double : valoriser l’univers rassurant et chaleureux de l’agence, et générer des demandes de devis rapidement et simplement. </span> \
@@ -146,16 +146,16 @@ export const experiences: Experience[] = [
     duration: '1 mois',
     website: 'https://www.prestakids.fr/',
     skills: [],
-    screenShot: '/screen_shots/prestakids_services.png',
-    screenShot1: '/screen_shots/prestakids_main.png',
-    screenShot2: '/screen_shots/prestakids_activities.png',
+    screenShot: '/images/screen_shots/prestakids_services.png',
+    screenShot1: '/images/screen_shots/prestakids_main.png',
+    screenShot2: '/images/screen_shots/prestakids_activities.png',
     isMobile: false
   },
   {
     id: 4,
     title: "French tech mediteranné",
     subtitle: 'Freelance',
-    cover: '/french_tech_logo.jpeg',
+    cover: '/images/logos/clients/french_tech_logo.jpeg',
     description: "<b>🎟️ Création d’un outil tout-en-un pour l’écosystème tech local</b> \
       <span>La French Tech Méditerranée avait besoin d’une plateforme unique pour organiser ses événements, gérer les inscriptions et la billetterie, publier du contenu, et fluidifier la gestion interne. </span> \
       <span>Le défi : concevoir un outil SaaS robuste et intuitif, accessible à toute la communauté tech locale.</span> \
@@ -180,9 +180,9 @@ export const experiences: Experience[] = [
     duration: '3 mois',
     website: 'https://www.lafrenchtechmed.com/',
     skills: [],
-    screenShot: '/screen_shots/french_tech_blog.png',
-    screenShot1: '/screen_shots/french_tech_main.png',
-    screenShot2: '/screen_shots/french_tech_page.png',
+    screenShot: '/images/screen_shots/french_tech_blog.png',
+    screenShot1: '/images/screen_shots/french_tech_main.png',
+    screenShot2: '/images/screen_shots/french_tech_page.png',
     isMobile: false
   },
 ];

@@ -3,7 +3,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from './header.module.css'
 import Image from "next/image";
-import smallLine from "@/app/assets/images/line_draw/small_line.svg";
 import { useRouter } from 'next/navigation'
 
 export default function Header() {
@@ -18,7 +17,7 @@ export default function Header() {
         <span>Lisa Faci</span>
         <Image
           className={styles.line_draw}
-          src={smallLine}
+          src="images/line_draw/small_line.svg"
           alt="ligne jaune dessiné à la main"
           width={180}
           height={50}

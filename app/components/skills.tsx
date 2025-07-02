@@ -2,8 +2,6 @@ import {hardSkills, SoftSkills} from '@/app/data/skills';
 import Image from "next/image";
 import styles from './skills.module.css';
 import SlideInOnScroll from "@/app/ui/slideInOnScroll";
-import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
-import circleLine from "@/app/assets/images/line_draw/circle_line.svg";
 
 export default function Skills() {
   return (
@@ -14,7 +12,7 @@ export default function Skills() {
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src={simpleLine}
+          src="images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -33,7 +31,7 @@ export default function Skills() {
             <h3>Hard</h3>
             <Image
               className={styles.circle_draw}
-              src={circleLine}
+              src="images/line_draw/circle_line.svg"
               alt="cercle jaune dessiné à la main"
               width={200}
               height={250}
@@ -72,7 +70,7 @@ export default function Skills() {
             <h3>Soft</h3>
             <Image
               className={styles.circle_draw}
-              src={circleLine}
+              src="images/line_draw/circle_line.svg"
               alt="cercle jaune dessiné à la main"
               width={200}
               height={250}

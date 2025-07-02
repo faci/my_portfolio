@@ -4,8 +4,6 @@ import Image from "next/image";
 import styles from "@/app/components/intro.module.css";
 import SlideInOnScroll from "@/app/ui/slideInOnScroll";
 import Button from "@/app/ui/button";
-import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
-import zLine from "@/app/assets/images/line_draw/z_line.svg";
 
 export default function Intro() {
   return (
@@ -16,7 +14,7 @@ export default function Intro() {
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src={simpleLine}
+          src="images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -42,7 +40,7 @@ export default function Intro() {
         <div className={styles.content__avatar}>
           <SlideInOnScroll direction="right">
             <Image
-              src="/portrait_intro.jpeg"
+              src="/images/portraits/portrait_intro.jpeg"
               alt="Portrait de Lisa Faci"
               width={351}
               height={351}
@@ -56,7 +54,7 @@ export default function Intro() {
         </div>
         <Image
           className={styles.z_line_left}
-          src={zLine}
+          src="images/line_draw/z_line.svg"
           alt="double ligne jaune dessiné à la main"
           width={470}
           height={90}

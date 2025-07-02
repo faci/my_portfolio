@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="hero" className={styles.hero}>
       <Image
-        src="/portrait.jpeg"
+        src="/images/portraits/portrait.jpeg"
         alt="Portrait de Lisa Faci"
         style={{
           width: '100%',

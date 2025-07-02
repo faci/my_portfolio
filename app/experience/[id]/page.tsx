@@ -8,7 +8,6 @@ import styles from './page.module.css'
 import SlideInOnScroll from "@/app/ui/slideInOnScroll";
 import ExperienceCard from '@/app/ui/experience_card'
 import TidyCalModal from '@/app/ui/tidyCalModal';
-import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
 
 export default function ExperiencePage({
   params,
@@ -39,7 +38,7 @@ export default function ExperiencePage({
         <h1 className={styles.title}>Expérience</h1>
         <Image
           className={styles.line_draw}
-          src={simpleLine}
+          src="images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -85,7 +84,7 @@ export default function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src={simpleLine}
+              src="images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -101,7 +100,7 @@ export default function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src={simpleLine}
+              src="images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -117,7 +116,7 @@ export default function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src={simpleLine}
+              src="images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -132,7 +131,7 @@ export default function ExperiencePage({
           </SlideInOnScroll>
             <Image
               className={styles.line_draw_information}
-              src={simpleLine}
+              src="images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}

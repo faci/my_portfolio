@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import {Experience} from '@/app/lib/types/experience'
 import styles from './experience_card.module.css'
-import smallLine from "@/app/assets/images/line_draw/small_line.svg";
 
 type Props = {
   experience: Experience;
@@ -31,7 +30,7 @@ export default function ExperienceCard({ experience, isFromExperience }: Props) 
       <span className={styles.subtitle}>{experience.subtitle}</span>
       <Image
         className={`${styles.top_left_mark} ${styles.mark}`}
-        src={smallLine}
+        src="images/line_draw/small_line.svg"
         alt="ligne jaune pour encardrer les cartes"
         width={150}
         height={80}
@@ -41,7 +40,7 @@ export default function ExperienceCard({ experience, isFromExperience }: Props) 
         (
           <Image
             className={`${styles.bottom_right_mark} ${styles.mark}`}
-            src={smallLine}
+            src="images/line_draw/small_line.svg"
             alt="ligne jaune pour encardrer les cartes"
             width={150}
             height={80}
@@ -53,7 +52,7 @@ export default function ExperienceCard({ experience, isFromExperience }: Props) 
         (
           <Image
             className={`${styles.top_right_mark} ${styles.mark}`}
-            src={smallLine}
+            src="images/line_draw/small_line.svg"
             alt="ligne jaune pour encardrer les cartes"
             width={150}
             height={80}

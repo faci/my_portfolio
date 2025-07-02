@@ -9,7 +9,7 @@ export default function Contact() {
       <h2 className={styles.title}>Travaillons ensemble !</h2>
       <div className={styles.content}>
         <Image
-          src="/portrait_contact.jpeg"
+          src="/images/portraits/portrait_contact.jpeg"
           alt="Portrait de Lisa Faci"
           width={275}
           height={366}

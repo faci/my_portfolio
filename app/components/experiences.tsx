@@ -3,7 +3,6 @@
 import ExperienceCard from '@/app/ui/experience_card'
 import {experiences} from '@/app/data/experiences'
 import SlideInOnScroll from "@/app/ui/slideInOnScroll";
-import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
 import styles from './experiences.module.css'
 
 import Image from "next/image";
@@ -24,7 +23,7 @@ export default function Experiences() {
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src={simpleLine}
+          src="images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}

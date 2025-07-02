@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./certification.module.css";
 import SlideInOnScroll from "@/app/ui/slideInOnScroll";
-import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
 
 export default function Certifications() {
   return (
@@ -12,7 +11,7 @@ export default function Certifications() {
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src={simpleLine}
+          src="images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -26,13 +25,13 @@ export default function Certifications() {
         </div>
         <div className={styles.content__badges}>
           <Image
-            src="/developer_associate.png"
+            src="/images/logos/skills/developer_associate.png"
             alt="badge certfication developer associate AWS"
             width={140}
             height={140}
           />
           <Image
-            src="/cloud_practitioner.png"
+            src="/images/logos/skills/cloud_practitioner.png"
             alt="badge certfication cloud practitionar AWS"
             width={140}
             height={140}
