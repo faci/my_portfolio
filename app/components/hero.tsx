@@ -9,7 +9,7 @@ export default function Hero() {
         alt="Portrait de Lisa Faci"
         style={{
           width: '100%',
-          maxWidth: '384px',
+          maxWidth: '300px',
           height: 'auto',
         }}
         width={384}

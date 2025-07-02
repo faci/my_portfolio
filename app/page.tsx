@@ -12,9 +12,9 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Intro />
-        <Certifications />
-        <Skills />
         <Experiences />
+        <Skills />
+        <Certifications />
         <Contact />
       </main>
     </div>

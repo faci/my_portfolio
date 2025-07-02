@@ -17,24 +17,31 @@
 }
 
 .content_data {
-    flex: 1;
+    width: 100%;
 }
 
 .informations {
-    flex: 1;
+    width: 100%;
     align-self: flex-start;
     position: sticky;
     top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;
     height: fit-content;
 }
 
 .information_content {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book_meeting {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
@@ -71,6 +78,10 @@
     transform: rotate(10deg);
 }
 
+.title {
+    font-size: clamp(3rem, 8vw, 4rem);
+}
+
 .title_box {
     position: relative;
     display: flex;
@@ -88,8 +99,10 @@
 }
 
 .screen_shot_card {
-    width: 385px;
-    height: 192px;
+    width: 60%;
+    height: 44%;
+    max-width: 330px;
+    max-height: 192px;
     padding: 8px;
     border-radius: 5px;
     background-color: #242323;
@@ -122,50 +135,92 @@
 .top_left {
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .center_center {
     top: 25%;
     left: 25%;
-    z-index: 2;
+    z-index: 0;
 }
 
 .center_center_mobile {
     left: 25%;
-    z-index: 2;
+    z-index: 0;
 }
 
 .bottom_right {
     bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .bottom_left {
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .experience_list_wrapper {
     width: 100%;
+    max-width: 100%;
     overflow-x: auto;
-    padding: 2rem;
+    box-sizing: border-box;
+    padding: 2rem 0; 
 }
   
 .experience_list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: row;
-    gap: 3rem;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
   
 .experience_list li {
-    scroll-snap-align: start;
     flex: 0 0 auto;
+    max-width: 100%;
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 15px 25px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .informations {
+        position: relative;
+    }
+
+    .line_draw {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1046px) {
+    .content_data_images {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .screen_shot_card {
+        position: unset;
+        width: 330px;
+        height: 192px;
+    }
+}
+
+.vhtml {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
 }

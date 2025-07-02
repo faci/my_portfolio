@@ -4,11 +4,27 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 86vh;
+  padding-bottom: 5%;
 }
 
 .title {
-  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-size: 58px;
   color: #FCAF45;
-  margin-top: -50px;
+  margin-top: 0;
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 7rem;
+    margin-top: -70px;
+  }
+}
+
+@media (min-width: 980px) {
+  .title {
+    font-size: 10rem;
+    margin-top: -70px;
+  }
 }

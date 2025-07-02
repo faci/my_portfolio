@@ -7,6 +7,7 @@ import { getExperience, getOtherExperiences } from "@/app/data/experiences"
 import styles from './page.module.css'
 import SlideInOnScroll from "@/app/ui/slideInOnScroll";
 import ExperienceCard from '@/app/ui/experience_card'
+import TidyCalModal from '@/app/ui/tidyCalModal';
 import simpleLine from "@/app/assets/images/line_draw/simple_line.svg";
 
 export default function ExperiencePage({
@@ -29,7 +30,7 @@ export default function ExperiencePage({
   }
 
   const redirectToDirection = (slug: number) => {
-    router.push(`/experience/${slug}`)
+    router.replace(`/experience/${slug}`)
   }
  
   return (
@@ -90,7 +91,10 @@ export default function ExperiencePage({
               height={90}
             />
           </div>
-          <div dangerouslySetInnerHTML={{__html: experience?.description}}></div>
+          <div
+            dangerouslySetInnerHTML={{__html: experience?.description}}
+            className={styles.vhtml}
+          ></div>
           <div className={styles.subtitle_box}>
             <SlideInOnScroll>
               <h2 className={styles.title}>Ma mission</h2>
@@ -103,7 +107,10 @@ export default function ExperiencePage({
               height={90}
             />
           </div>
-          <div dangerouslySetInnerHTML={{__html: experience?.mission}}></div>
+          <div
+            dangerouslySetInnerHTML={{__html: experience?.mission}}
+            className={styles.vhtml}
+          ></div>
           <div className={styles.subtitle_box}>
             <SlideInOnScroll>
               <h2 className={styles.title}>Rex (retour d&apos;experience)</h2>
@@ -152,12 +159,16 @@ export default function ExperiencePage({
                 otherExperiences.map(experience => {
                   return (
                     <li key={experience.title} onClick={() => redirectToDirection(experience.id)}>
-                      <ExperienceCard experience={experience} isExperience />
+                      <ExperienceCard experience={experience} isFromExperience />
                     </li>
                   )
                 })
               }
             </ul>
+          </div>
+          <div className={styles.book_meeting}>
+            <span>Parlons de votre projet 👇</span>
+            <TidyCalModal />
           </div>
         </div>
       </div>

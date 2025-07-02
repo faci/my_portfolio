@@ -41,7 +41,7 @@ export default function Experiences() {
           experiences.map(experience => {
             return (
               <li key={experience.title} onClick={() => redirectToDirection(experience.id)}>
-                <ExperienceCard experience={experience} isExperience={false}/>
+                <ExperienceCard experience={experience} isFromExperience={false}/>
               </li>
             )
           })

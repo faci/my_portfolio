@@ -18,5 +18,5 @@
 }
 
 .base:not(.slideInRight) {
-  transform: translateX(30px);
+  transform: translateX(0);
 }

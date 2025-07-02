@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 35px 15px;
 }
 
 .title {
@@ -17,15 +16,9 @@
     align-items: center;
 }
 
-
-@media (min-width: 600px) {
-    .content {
-        flex-direction: row;
-    }
-}
-
 .content__text_container {
     width: 100%;
+    margin-top: 35px;
 }
 
 .content__badges {
@@ -57,4 +50,15 @@
 
 .title_box {
     position: relative;
+}
+
+
+@media (min-width: 600px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .content__text_container {
+        margin-top: 0;
+    }
 }

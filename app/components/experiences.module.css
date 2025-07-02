@@ -5,6 +5,7 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .title {
@@ -21,22 +22,6 @@
     flex-direction: column;
     gap: 2rem;
     padding: 30px;
-}
-  
-@media (min-width: 768px) {
-    .experience_list {
-      flex-direction: row;
-      overflow-x: auto;
-      gap: 3rem;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 1rem;
-    }
-  
-    .experience_list li {
-      scroll-snap-align: start;
-      flex: 0 0 auto;
-    }
 }
 
 .title_container {
@@ -59,4 +44,20 @@
 
 .subtitle {
     margin-bottom: 30px;
+}
+  
+@media (min-width: 770px) {
+    .experience_list {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 3rem;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 1rem;
+    }
+  
+    .experience_list li {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+    }
 }

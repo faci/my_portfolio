@@ -1,12 +1,20 @@
+'use client';
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from './header.module.css'
 import Image from "next/image";
 import smallLine from "@/app/assets/images/line_draw/small_line.svg";
+import { useRouter } from 'next/navigation'
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <div className={styles.header__container}>
-      <div className={styles.title_container}>
+      <div
+        className={styles.title_container}
+        onClick={() => router.push('/')}
+      >
         <span>Lisa Faci</span>
         <Image
           className={styles.line_draw}

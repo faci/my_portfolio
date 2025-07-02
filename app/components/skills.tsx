@@ -40,7 +40,7 @@ export default function Skills() {
             />
           </div>
           <div className={styles.content__list}>
-            <ul>
+            <ul className={styles.hard_skills_list}>
               {
                 hardSkills.map(skill => {
                   return (
@@ -49,6 +49,11 @@ export default function Skills() {
                         <span className={styles.icon}>{skill.icon}</span>
                         <div className={styles.tooltipWrapper}>
                           <span>{skill.label}</span>
+                          <div className={styles.mobile_content}>
+                            <span>{skill.description}</span>
+                            <span>{skill.duration}</span>
+                          </div>
+
                           <div className={`${styles.tooltip} ${styles.tooltip_hard}`}>
                             <span className={styles.tooltip__text}>{skill.description}</span>
                             <span>{skill.duration}</span>
