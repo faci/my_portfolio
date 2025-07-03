@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from '@/app/ui/header';
+import Footer from '@/app/ui/footer';
 import "./globals.css";
 import { Montserrat, Poppins } from 'next/font/google'
 
@@ -67,6 +68,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
