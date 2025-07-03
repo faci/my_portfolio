@@ -9,7 +9,7 @@ const TidyCalModal = () => {
   return (
     <>
       <div className={styles.book_meeting}>
-        Vous avez un projet et souhaitez en discuter, ou simplement besoin d&apos;un conseil tech
+        👉 Vous avez un projet et souhaitez en discuter, ou simplement besoin d&apos;un conseil tech
         <button onClick={() => setOpen(true)} className={styles.openButton}>
           📅 Parlons en !
         </button>

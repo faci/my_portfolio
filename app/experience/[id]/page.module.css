@@ -104,6 +104,7 @@
 .screen_shot_card_mobile {
     width: 235px;
     height: 465px;
+    max-height: 465px;
 }
 
 .screen_shot_image {
@@ -207,6 +208,12 @@
         position: unset;
         width: 330px;
         height: 192px;
+    }
+
+    .screen_shot_card_mobile {
+        width: 250px;
+        height: 465px;
+        max-height: 465px;
     }
 }
 
