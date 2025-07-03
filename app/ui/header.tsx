@@ -17,7 +17,7 @@ export default function Header() {
         <span>Lisa Faci</span>
         <Image
           className={styles.line_draw}
-          src="images/line_draw/small_line.svg"
+          src="/images/line_draw/small_line.svg"
           alt="ligne jaune dessiné à la main"
           width={180}
           height={50}

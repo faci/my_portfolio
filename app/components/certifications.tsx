@@ -11,7 +11,7 @@ export default function Certifications() {
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src="images/line_draw/simple_line.svg"
+          src="/images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -19,7 +19,7 @@ export default function Certifications() {
       </div>
       <div className={styles.content}>
         <div className={styles.content__text_container}>
-          <span>
+          <span className={styles.content__text}>
             J’aime comprendre ce que je fais. Voici les formations et certifications que j’ai suivies pour aller plus loin dans ma pratique du développement.
           </span>
         </div>

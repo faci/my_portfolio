@@ -30,7 +30,7 @@ export default function ExperienceCard({ experience, isFromExperience }: Props) 
       <span className={styles.subtitle}>{experience.subtitle}</span>
       <Image
         className={`${styles.top_left_mark} ${styles.mark}`}
-        src="images/line_draw/small_line.svg"
+        src="/images/line_draw/small_line.svg"
         alt="ligne jaune pour encardrer les cartes"
         width={150}
         height={80}
@@ -40,7 +40,7 @@ export default function ExperienceCard({ experience, isFromExperience }: Props) 
         (
           <Image
             className={`${styles.bottom_right_mark} ${styles.mark}`}
-            src="images/line_draw/small_line.svg"
+            src="/images/line_draw/small_line.svg"
             alt="ligne jaune pour encardrer les cartes"
             width={150}
             height={80}
@@ -52,7 +52,7 @@ export default function ExperienceCard({ experience, isFromExperience }: Props) 
         (
           <Image
             className={`${styles.top_right_mark} ${styles.mark}`}
-            src="images/line_draw/small_line.svg"
+            src="/images/line_draw/small_line.svg"
             alt="ligne jaune pour encardrer les cartes"
             width={150}
             height={80}

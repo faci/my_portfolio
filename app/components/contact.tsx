@@ -8,18 +8,17 @@ export default function Contact() {
     <section id="contact" className={styles.container}>
       <h2 className={styles.title}>Travaillons ensemble !</h2>
       <div className={styles.content}>
-        <Image
-          src="/images/portraits/portrait_contact.jpeg"
-          alt="Portrait de Lisa Faci"
-          width={275}
-          height={366}
-          className={styles.portrait}
-        />
+        <div className={styles.image_container}>
+          <Image
+            src="/images/portraits/portrait_contact.jpeg"
+            alt="Portrait de Lisa Faci"
+            width={275}
+            height={366}
+            className={styles.portrait}
+          />
+        </div>
         <div className={styles.informations}>
-          <div className={styles.book_meeting}>
-            <span>Parlons de votre projet 👇</span>
-            <TidyCalModal />
-          </div>
+          <TidyCalModal />
           <div>
             <span>Email : lisa.sarah.f@gmail.com</span>
             <div className={styles.social_links}>

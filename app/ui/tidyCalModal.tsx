@@ -8,9 +8,12 @@ const TidyCalModal = () => {
 
   return (
     <>
-      <button onClick={() => setOpen(true)} className={styles.openButton}>
-        📅 Réserver un appel
-      </button>
+      <div className={styles.book_meeting}>
+        Vous avez un projet et souhaitez en discuter, ou simplement besoin d&apos;un conseil tech
+        <button onClick={() => setOpen(true)} className={styles.openButton}>
+          📅 Parlons en !
+        </button>
+      </div>
 
       {open && (
         <div className={styles.overlay}>

@@ -16,9 +16,17 @@
     align-items: center;
 }
 
+.content__text {
+    width: 85%;
+}
+
 .content__text_container {
     width: 100%;
     margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
 .content__badges {
@@ -60,5 +68,6 @@
 
     .content__text_container {
         margin-top: 0;
+        margin-bottom: 25px;
     }
 }

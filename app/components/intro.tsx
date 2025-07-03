@@ -14,7 +14,7 @@ export default function Intro() {
         </SlideInOnScroll>
         <Image
           className={styles.line_draw}
-          src="images/line_draw/simple_line.svg"
+          src="/images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -54,7 +54,7 @@ export default function Intro() {
         </div>
         <Image
           className={styles.z_line_left}
-          src="images/line_draw/z_line.svg"
+          src="/images/line_draw/z_line.svg"
           alt="double ligne jaune dessiné à la main"
           width={470}
           height={90}

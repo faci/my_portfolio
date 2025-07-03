@@ -38,7 +38,7 @@ export default function ExperiencePage({
         <h1 className={styles.title}>Expérience</h1>
         <Image
           className={styles.line_draw}
-          src="images/line_draw/simple_line.svg"
+          src="/images/line_draw/simple_line.svg"
           alt="ligne jaune dessiné à la main"
           width={470}
           height={90}
@@ -84,7 +84,7 @@ export default function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src="images/line_draw/simple_line.svg"
+              src="/images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -100,7 +100,7 @@ export default function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src="images/line_draw/simple_line.svg"
+              src="/images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -116,7 +116,7 @@ export default function ExperiencePage({
             </SlideInOnScroll>
             <Image
               className={styles.line_draw_subtitle}
-              src="images/line_draw/simple_line.svg"
+              src="/images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -131,7 +131,7 @@ export default function ExperiencePage({
           </SlideInOnScroll>
             <Image
               className={styles.line_draw_information}
-              src="images/line_draw/simple_line.svg"
+              src="/images/line_draw/simple_line.svg"
               alt="ligne jaune dessiné à la main"
               width={470}
               height={90}
@@ -165,10 +165,7 @@ export default function ExperiencePage({
               }
             </ul>
           </div>
-          <div className={styles.book_meeting}>
-            <span>Parlons de votre projet 👇</span>
-            <TidyCalModal />
-          </div>
+          <TidyCalModal />
         </div>
       </div>
     </div>
